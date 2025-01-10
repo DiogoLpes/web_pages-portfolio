@@ -1,0 +1,62 @@
+body {
+    margin: 0 ;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    border-bottom: 1px solid rgb(200, 200, 200);
+    box-shadow: 0 3px 5px grey;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    width: 100%;
+    
+}
+
+.navbar nav a:hover{
+    color: red;
+}
+
+
+.navbar nav{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 20px;
+   
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header .home-button {
+    font-size: 30px;
+    text-decoration: none;
+}   
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-container {
+    margin: auto;
+    width: 30%;
+    padding: 120px;
+}
+
+h2 {
+    padding-left: 500px;
+}
+ 
+table {
+     width: 30%;
+     height: 10%;
+     
+}

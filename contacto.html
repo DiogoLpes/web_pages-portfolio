@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="educaçao.html">educação</a></li>
-                <li><a href="experiencia.html">experiência</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul> 
-        </nav>
+        <div class="container">
+            <div class="navbar">
+                <a class="home-button" href="index.html">Diogo Lopes</a> 
+                <nav>   
+                    <a href="index.html">Inicio</a>
+                    <a href="educaçao.html">educação</a>
+                    <a href="experiencia.html">experiência</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>  
+        </div> 
     </header>
-    <h1>Entre em Contato</h1>
-        <img src="24770152_101.png" alt="" width="222" height="300">
-        <div>  
+    <h2>Entre em Contato</h2>
+        <div class="main-container"> 
+        <img src="24770152_101.png" alt="" width="250" align="left">
         <form action="/enviar" method="POST">
           
             <label for="nome">Nome:</label>
