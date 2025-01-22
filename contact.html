@@ -12,31 +12,29 @@
         <div id="navbar"></div> 
     <main>
         <h2>Entre em Contato</h2>
-        <div class="main-container"> 
-        <img src="24770152_101.png" alt="" width="250" align="left">
-        <form action="/enviar" method="POST">
-          
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="tel">Telefone:</label>
-            <input type="tel" id="number" name="number" required><br><br>
-
-            <label for="nome">Região</label>
-            <select name="" id="">
+        <div class="contact-container"> 
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Subject" required>
+            </div>
+            <div>
+               <label>Região</label>
+            <select name="" id="" class="form-group">
                 <option value="norte">Norte</option>\
                 <option value="norte">Centro</option>
                 <option value="norte">Sul</option>
-            </select>
-            <br><br>
-
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
-
-            <button type="submit">Enviar</button>
+            </select> 
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
         </form>
         </div>
         <div id="footer">
