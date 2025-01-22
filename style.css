@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+
 header {
     box-shadow: 0 3px 5px grey;
 }
@@ -10,7 +11,7 @@ main{
 }
 
 .navbar {
-    background: #f8f9fa;
+    background: #ffffff;
     padding: 1rem 3rem;
     display: flex;
     justify-content: space-around;
@@ -20,10 +21,7 @@ main{
 }
 
 .logo a {
-    color: #333;
     font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 .nav-menu {
@@ -58,47 +56,55 @@ main{
 
 .skills-container {
     text-align: center;
-    padding: 40px 20px;
-    background-color: #ffffff;
-
+    padding: 80px 20px;
+    background-color: #f8f9fa;
 }
 
 .skills-container h2 {
-    margin-bottom: 30px;
-    color: #333;
-    font-size: 2rem;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
 }
 
-.skills-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    max-width: 1200px;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    max-width: 900px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
-.skills-icons img {
-    width: 80px;
-    height: 80px;
-    transition: transform 0.3s ease;
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skills-icons img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
+.skill-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
 
-@media (max-width: 768px) {
-    .skills-icons {
-        gap: 20px;
-    }
+.skill-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
 
-    .skills-icons img {
-        width: 60px;
-        height: 60px;
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -181,8 +187,6 @@ main{
 .bio-section h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #000000;
-
 }
 
 .bio-text {
@@ -270,7 +274,6 @@ main{
     padding: 120px;
 }
 
-    
 
 .contact-form {
     background: white;
@@ -300,6 +303,23 @@ main{
     border-color: #007bff;
 }
 
+.form-select {
+    width: 104%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
 .submit-btn {
     background: #007bff;
     color: white;
@@ -326,9 +346,56 @@ main{
     color: white;
   }
 
+.status-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+}
+
+.status-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.status-card h3 {
+    color: #333;
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.status-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #007bff;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+
 footer {
     text-align: center;
     padding: 20px 0; 
     background-color: #333;
     color: white;
   }
+
+
