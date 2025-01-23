@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    flex: 1;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -10,24 +11,23 @@ main{
     min-height: calc(100vh - 95px)
 }
 
+
 .navbar {
     background: #ffffff;
-    padding: 1rem 3rem;
+    padding: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: sticky;
-    
 }
 
 .logo a {
-    font-size: 1.5rem;
+    font-size: 1,5rem;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .nav-menu li a {
@@ -52,6 +52,7 @@ main{
     margin: auto;
     width: 30%;
     padding: 120px;
+    height: 100vh;
 }
 
 .skills-container {
@@ -104,26 +105,8 @@ main{
 
 @media (max-width: 480px) {
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-}
-
-.highlight {
-    color: #007bff;
-}
-
-.central-button:hover {
-    background: #0056b3;
-}
-
-.central-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
 }
 
 .about-me {
@@ -214,22 +197,10 @@ main{
     min-width: 80px;
 }
 
-@media (max-width: 768px) {
-    .about-container {
-        grid-template-columns: 1fr;
-    }
 
-    .profile-section {
-        margin-bottom: 30px;
-    }
-
-    .personal-info {
-        grid-template-columns: 1fr;
-    }
-}
 
 .projects-section {
-    padding: 250px;
+    margin-top: 200px;
 }
 
 .projects-section h2 {
@@ -240,7 +211,7 @@ main{
 .simple-table {
     width: 100%;
     max-width: 900px;
-    margin: 0 auto;
+    margin: auto;
     border-collapse: collapse;
 }
 
@@ -270,14 +241,9 @@ main{
 
 .contact-container {
     margin: auto;
-    width: 35%;
-    padding: 120px;
-}
-
-
-.contact-form {
+    width: 40%;
     background: white;
-    padding: 30px;
+    padding: 35px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -293,7 +259,6 @@ main{
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-    transition: border-color 0.3s;
 }
 
 
@@ -335,16 +300,7 @@ main{
     background: #0056b3;
 }
 
-.fa {
-    padding: 20px;
-    font-size: 40px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 40%;
-    background-color: black;
-    color: white;
-  }
+
 
 .status-section {
     padding: 60px 20px;
@@ -390,6 +346,15 @@ main{
     transform: translateY(-2px);
 }
 
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 30px;
+    text-decoration: none;
+    border-radius: 40%;
+    background-color: black;
+    color: white;
+  }
 
 footer {
     text-align: center;
@@ -399,3 +364,25 @@ footer {
   }
 
 
+  @media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-section {
+        margin-bottom: 30px;
+    }
+
+    .personal-info {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        width: 80%;
+       height: 100vh;
+    }
+}
+
+#container-main{
+    display: flex;
+}
